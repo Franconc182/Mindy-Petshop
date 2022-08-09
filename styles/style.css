@@ -1,0 +1,110 @@
+/* General */
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Radio Canada', sans-serif;
+}
+
+html {
+    height: 100vh;
+}
+
+#logo{
+    border-radius: 100%;
+    width: 10rem;
+    height: 9rem;
+    border: 1px black solid;
+}
+
+.botonesnav a{
+    border-radius: 1rem;
+    box-shadow: 1px 1px 1px black;
+    position:relative;
+    margin: 1rem;
+    padding: 0.5rem;
+    background-color: #7a5199;
+    color: white;
+    border: none;
+    cursor:pointer;
+}
+nav, footer{
+    background-color: #b58bcf;
+}
+#fotofooter{
+    width: 8rem;
+}
+
+#pfooter{
+    font-family: 'Radio Canada', sans-serif;
+}
+
+footer{
+    padding: .5rem;
+}
+
+footer div div p {
+    margin: .5rem;
+}
+
+body {
+    min-height: 100vh;
+}
+
+main {
+    flex-grow: 1;
+}
+
+/* Index */
+
+/* Juguetes */
+
+/* Farmacia */
+
+/* Contacto */
+
+#comentarios {
+    resize: none;
+}
+
+/* Carrito */
+
+/* Media queries */
+
+@media (max-width: 576px) { 
+
+    .contacto--main {
+        flex-direction: column;
+    }
+
+    .contacto--div--form {
+        width: 90%!important;
+    }
+
+    .contacto--iframe {
+        width: 400px;
+        height: 300px;
+    }
+
+    .carrito--main {
+        flex-direction: column-reverse;
+    }
+
+    .carrito--total {
+        position: inherit;
+        align-self: center!important;
+    }
+
+    .footer--div {
+        flex-direction: column-reverse;
+    }
+
+
+}
+
+@media (max-width: 350px) {
+    .carrito--total {
+        width: 16rem!important;
+    }
+}
